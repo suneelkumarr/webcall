@@ -1,0 +1,22 @@
+{
+  "name": "videocall",
+  "version": "1.0.0",
+  "description": "This is one by one video calling and chating app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"node index.js\" \"npm run client\"",
+    "start":"nodemon index.js"
+  },
+  "keywords": [],
+  "author": "suneel kumar",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.2.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "socket.io": "^4.2.0",
+    "socket.io-client": "^4.2.0"
+  }
+}
